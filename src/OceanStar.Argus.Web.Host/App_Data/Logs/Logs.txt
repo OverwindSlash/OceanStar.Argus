@@ -1,0 +1,147 @@
+DEBUG 2020-09-06 22:08:39,345 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-06 22:08:39,395 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-06 22:08:39,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.Web.Host.Startup.ArgusWebHostModule, OceanStar.Argus.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusWebCoreModule, OceanStar.Argus.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusApplicationModule, OceanStar.Argus.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusCoreModule, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.EntityFrameworkCore.ArgusEntityFrameworkModule, OceanStar.Argus.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:39,414 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-06 22:08:39,466 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:08:39,466 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:08:39,466 [1    ] o.Configuration.LanguageManagementConfig - Converted Argus (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:08:39,466 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:08:39,742 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: OceanStar.Argus.EntityFrameworkCore.ArgusDbContext, OceanStar.Argus.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:08:40,409 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-06 22:08:40,459 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-06 22:08:40,497 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-06 22:08:40,513 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Argus
+DEBUG 2020-09-06 22:08:40,539 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-06 22:08:40,676 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-06 22:08:40,768 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[OceanStar.Argus.MultiTenancy.Tenant, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OceanStar.Argus.Authorization.Users.User, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-06 22:08:40,804 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-09-06 22:08:40,804 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Users.Dto.CreateUserDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Users.Dto.UserDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Roles.Dto.PermissionDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-06 22:08:40,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.MultiTenancy.Dto.TenantDto
+INFO  2020-09-06 22:08:44,478 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-09-06 22:08:44,690 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Overwind\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-09-06 22:08:44,760 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-06 22:08:44,832 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:08:47,189 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OceanStar.Argus.Web.Host.Controllers.HomeController (OceanStar.Argus.Web.Host).
+INFO  2020-09-06 22:08:48,006 [14   ] c.Infrastructure.ControllerActionInvoker - Executing action method OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host) - Validation state: Valid
+INFO  2020-09-06 22:08:48,011 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action method OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.302ms.
+INFO  2020-09-06 22:08:48,157 [5    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-06 22:08:48,163 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host) in 969.6258ms
+INFO  2020-09-06 22:08:48,165 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:08:48,178 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3418.294ms 302 
+INFO  2020-09-06 22:08:48,187 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-09-06 22:08:48,204 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.6452ms 301 
+INFO  2020-09-06 22:08:48,208 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-06 22:08:48,237 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.8388ms 200 text/html;charset=utf-8
+INFO  2020-09-06 22:08:48,264 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-09-06 22:08:48,266 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-09-06 22:08:48,268 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-09-06 22:08:48,270 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-09-06 22:08:48,271 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-09-06 22:08:48,283 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Workspace\Formal\OceanStar.Argus\aspnet-core\src\OceanStar.Argus.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-09-06 22:08:48,283 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Workspace\Formal\OceanStar.Argus\aspnet-core\src\OceanStar.Argus.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-09-06 22:08:48,284 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.193ms 200 application/javascript
+INFO  2020-09-06 22:08:48,286 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.82ms 200 application/javascript
+INFO  2020-09-06 22:08:48,292 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-09-06 22:08:48,293 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-09-06 22:08:48,294 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-09-06 22:08:48,297 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.8848ms 200 application/javascript
+INFO  2020-09-06 22:08:48,298 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.882ms 200 application/javascript
+INFO  2020-09-06 22:08:48,299 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.4316ms 200 text/css
+INFO  2020-09-06 22:08:48,579 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-06 22:08:48,583 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:08:48,591 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller OceanStar.Argus.Web.Host.Controllers.AntiForgeryController (OceanStar.Argus.Web.Host).
+INFO  2020-09-06 22:08:48,611 [9    ] c.Infrastructure.ControllerActionInvoker - Executing action method OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host) - Validation state: Valid
+INFO  2020-09-06 22:08:48,612 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2020-09-06 22:08:48,614 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-06 22:08:48,616 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2020-09-06 22:08:48,618 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.7247ms 200 image/png
+INFO  2020-09-06 22:08:48,625 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action method OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 12.0793ms.
+INFO  2020-09-06 22:08:48,720 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-06 22:08:48,741 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 128.3472ms 200 application/json;charset=utf-8
+INFO  2020-09-06 22:08:48,803 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host) in 209.1653ms
+INFO  2020-09-06 22:08:48,804 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:08:48,806 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 227.4838ms 200 application/json; charset=utf-8
+DEBUG 2020-09-06 22:10:02,608 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-06 22:10:02,654 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-06 22:10:02,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.Web.Host.Startup.ArgusWebHostModule, OceanStar.Argus.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusWebCoreModule, OceanStar.Argus.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusApplicationModule, OceanStar.Argus.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.ArgusCoreModule, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OceanStar.Argus.EntityFrameworkCore.ArgusEntityFrameworkModule, OceanStar.Argus.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:02,671 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-06 22:10:02,722 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:10:02,722 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:10:02,722 [1    ] o.Configuration.LanguageManagementConfig - Converted Argus (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:10:02,722 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-06 22:10:03,007 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: OceanStar.Argus.EntityFrameworkCore.ArgusDbContext, OceanStar.Argus.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-06 22:10:03,609 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-09-06 22:10:03,655 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-09-06 22:10:03,692 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-09-06 22:10:03,709 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Argus
+DEBUG 2020-09-06 22:10:03,734 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-09-06 22:10:03,874 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-09-06 22:10:03,964 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[OceanStar.Argus.MultiTenancy.Tenant, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OceanStar.Argus.Authorization.Users.User, OceanStar.Argus.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-09-06 22:10:04,000 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-09-06 22:10:04,000 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-09-06 22:10:04,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Users.Dto.CreateUserDto
+DEBUG 2020-09-06 22:10:04,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Users.Dto.UserDto
+DEBUG 2020-09-06 22:10:04,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-09-06 22:10:04,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-09-06 22:10:04,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.Roles.Dto.PermissionDto
+DEBUG 2020-09-06 22:10:04,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-09-06 22:10:04,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OceanStar.Argus.MultiTenancy.Dto.TenantDto
+INFO  2020-09-06 22:10:05,815 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-09-06 22:10:06,003 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Overwind\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+WARN  2020-09-06 22:10:06,034 [1    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding address(es) 'http://localhost:21021/'. Binding to endpoints defined in UseKestrel() instead.
+INFO  2020-09-06 22:10:06,591 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-09-06 22:10:06,663 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:10:09,092 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OceanStar.Argus.Web.Host.Controllers.HomeController (OceanStar.Argus.Web.Host).
+INFO  2020-09-06 22:10:09,863 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host) - Validation state: Valid
+INFO  2020-09-06 22:10:09,868 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2666ms.
+INFO  2020-09-06 22:10:10,070 [14   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-09-06 22:10:10,076 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host) in 979.9036ms
+INFO  2020-09-06 22:10:10,078 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'OceanStar.Argus.Web.Host.Controllers.HomeController.Index (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:10:10,086 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3495.8965ms 302 
+INFO  2020-09-06 22:10:10,101 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-09-06 22:10:10,138 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.54ms 200 text/html;charset=utf-8
+INFO  2020-09-06 22:10:10,430 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-09-06 22:10:10,434 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:10:10,442 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller OceanStar.Argus.Web.Host.Controllers.AntiForgeryController (OceanStar.Argus.Web.Host).
+INFO  2020-09-06 22:10:10,460 [7    ] c.Infrastructure.ControllerActionInvoker - Executing action method OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host) - Validation state: Valid
+INFO  2020-09-06 22:10:10,462 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-09-06 22:10:10,468 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action method OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.9964ms.
+INFO  2020-09-06 22:10:10,551 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 88.2555ms 200 application/json;charset=utf-8
+INFO  2020-09-06 22:10:10,565 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-09-06 22:10:10,645 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host) in 201.6645ms
+INFO  2020-09-06 22:10:10,647 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'OceanStar.Argus.Web.Host.Controllers.AntiForgeryController.SetCookie (OceanStar.Argus.Web.Host)'
+INFO  2020-09-06 22:10:10,648 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 219.5708ms 200 application/json; charset=utf-8
