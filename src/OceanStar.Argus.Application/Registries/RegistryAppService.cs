@@ -23,9 +23,15 @@ namespace OceanStar.Argus.Registries
             return ObjectMapper.Map<CameraDto>(camera);
         }
 
-        public Task<CameraDto> RegisterCamera(RegisterCameraDto input)
+        public async Task<CameraDto> RegisterCamera(RegisterCameraDto input)
         {
-            throw new System.NotImplementedException();
+            Camera camera = ObjectMapper.Map<Camera>(input);
+
+            int cameraId = await _cameraRepository.InsertAndGetIdAsync(camera);
+
+            CameraDto cameraDto = new CameraDto(input);
+
+            return cameraDto;
         }
 
         public Task UnregisterCamera(int cameraId)

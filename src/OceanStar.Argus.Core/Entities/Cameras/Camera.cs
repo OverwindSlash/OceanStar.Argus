@@ -9,7 +9,7 @@ namespace OceanStar.Argus.Entities.Cameras
         public string Name { get; set; }
 
         public string Uri { get; set; }
-        public string Transportation { get; set; }
+        public CameraTransportation Transportation { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
 
@@ -23,6 +23,6 @@ namespace OceanStar.Argus.Entities.Cameras
         public string Model { get; set; }
 
         [NotMapped]
-        public string Status { get; set; }
+        public CameraStatus Status { get; set; }
     }
 }

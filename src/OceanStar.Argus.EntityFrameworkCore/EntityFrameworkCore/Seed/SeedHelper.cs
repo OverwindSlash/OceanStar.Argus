@@ -1,12 +1,12 @@
-﻿using System;
-using System.Transactions;
-using Microsoft.EntityFrameworkCore;
-using Abp.Dependency;
+﻿using Abp.Dependency;
 using Abp.Domain.Uow;
 using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
+using Microsoft.EntityFrameworkCore;
 using OceanStar.Argus.EntityFrameworkCore.Seed.Host;
 using OceanStar.Argus.EntityFrameworkCore.Seed.Tenants;
+using System;
+using System.Transactions;
 
 namespace OceanStar.Argus.EntityFrameworkCore.Seed
 {

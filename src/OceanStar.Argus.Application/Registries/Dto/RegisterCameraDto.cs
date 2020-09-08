@@ -1,7 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Abp.AutoMapper;
+using OceanStar.Argus.Entities.Cameras;
 
 namespace OceanStar.Argus.Registries.Dto
 {
+    [AutoMap(typeof(Camera))]
     public class RegisterCameraDto
     {
         [Required]
@@ -12,7 +15,7 @@ namespace OceanStar.Argus.Registries.Dto
         [Required]
         public string Uri { get; set; }
         [Required]
-        public string Transportation { get; set; }
+        public CameraTransportation Transportation { get; set; }
 
         [Required]
         public double Longtitude { get; set; }

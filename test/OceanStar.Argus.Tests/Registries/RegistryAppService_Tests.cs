@@ -30,7 +30,7 @@ namespace OceanStar.Argus.Tests.Registries
                 Code = code,
                 Name = name,
                 Uri = uri,
-                Transportation = transportation,
+                Transportation = CameraTransportation.Tcp,
                 Longtitude = 118.798913,
                 Latitude = 32.085382
             };
@@ -42,6 +42,8 @@ namespace OceanStar.Argus.Tests.Registries
                 Camera addedCamera = await context.Cameras.FirstOrDefaultAsync(
                     c => c.Code == code);
                 addedCamera.Name.ShouldBe(name);
+
+                context.Cameras.Remove(addedCamera);
             });
         }
     }
