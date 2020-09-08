@@ -5,17 +5,14 @@ namespace OceanStar.Argus.Registries.Dto
     public class RegisterCameraDto
     {
         [Required]
+        public string Code { get; set; }
+        [Required]
         public string Name { get; set; }
 
         [Required]
         public string Uri { get; set; }
         [Required]
-        public string Transpotation { get; set; }
-        [Required]
-        public string Username { get; set; }
-        [Required]
-        public string Password { get; set; }
-
+        public string Transportation { get; set; }
 
         [Required]
         public double Longtitude { get; set; }
@@ -24,6 +21,8 @@ namespace OceanStar.Argus.Registries.Dto
 
         public string Ip { get; set; }
         public int Port { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
         public string Vendor { get; set; }
         public string Model { get; set; }
