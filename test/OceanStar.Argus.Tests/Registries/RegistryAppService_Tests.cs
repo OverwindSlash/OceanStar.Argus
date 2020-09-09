@@ -23,19 +23,19 @@ namespace OceanStar.Argus.Tests.Registries
             string code = "XWH_BD_D2X_04";
             string name = "玄武湖隧道北道东向西04";
             string uri = "rtsp://root:root@192.168.0.100:8021/camera";
-            string transportation = "tcp";
+            string protocol = "tcp";
 
             RegisterCameraDto input = new RegisterCameraDto()
             {
                 Code = code,
                 Name = name,
                 Uri = uri,
-                Transportation = CameraTransportation.Tcp,
+                Protocol = RtspProtocol.Tcp,
                 Longtitude = 118.798913,
                 Latitude = 32.085382
             };
 
-            CameraDto camera = await _registryAppService.RegisterCamera(input);
+            int cameraId = await _registryAppService.RegisterCamera(input);
 
             await UsingDbContextAsync(async context =>
             {

@@ -1,45 +1,40 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using OceanStar.Argus.Registries.Dto;
-using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using OceanStar.Argus.Entities.Cameras;
+using OceanStar.Argus.Registries.Dto;
+using System.Threading.Tasks;
 
 namespace OceanStar.Argus.Registries
 {
-    public class RegistryAppService : ApplicationService, IRegistryAppService
+    public class RegistryAppService :
+        AsyncCrudAppService<Camera, CameraDto, int, PagedCameraResultRequestDto, RegisterCameraDto, CameraDto>,
+        IRegistryAppService
     {
         private readonly IRepository<Camera> _cameraRepository;
 
         public RegistryAppService(IRepository<Camera> cameraRepository)
+            : base(cameraRepository)
         {
             _cameraRepository = cameraRepository;
         }
 
-        public async Task<CameraDto> GetCameraById(int cameraId)
+        public async Task<int> RegisterCamera(RegisterCameraDto input)
         {
-            Camera camera = await _cameraRepository.FirstOrDefaultAsync(cameraId);
+            Camera existCamera = await _cameraRepository.FirstOrDefaultAsync(c => c.Code == input.Code);
+            if (existCamera != null)
+            {
+                return existCamera.Id;
+            }
 
-            return ObjectMapper.Map<CameraDto>(camera);
-        }
-
-        public async Task<CameraDto> RegisterCamera(RegisterCameraDto input)
-        {
             Camera camera = ObjectMapper.Map<Camera>(input);
 
             int cameraId = await _cameraRepository.InsertAndGetIdAsync(camera);
 
-            CameraDto cameraDto = new CameraDto(input);
-
-            return cameraDto;
+            return cameraId;
         }
 
         public Task UnregisterCamera(int cameraId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<PagedResultDto<CameraDto>> GetAllCameraAsync(PagedCameraResultRequestDto input)
         {
             throw new System.NotImplementedException();
         }
