@@ -1,9 +1,9 @@
-﻿using OceanStar.Argus.Registries;
-using OceanStar.Argus.Registries.Dto;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OceanStar.Argus.Entities.Cameras;
+using OceanStar.Argus.Registries;
+using OceanStar.Argus.Registries.Dto;
 using Shouldly;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace OceanStar.Argus.Tests.Registries
@@ -42,8 +42,6 @@ namespace OceanStar.Argus.Tests.Registries
                 Camera addedCamera = await context.Cameras.FirstOrDefaultAsync(
                     c => c.Code == code);
                 addedCamera.Name.ShouldBe(name);
-
-                context.Cameras.Remove(addedCamera);
             });
         }
     }
