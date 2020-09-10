@@ -1,9 +1,15 @@
-﻿using Abp.Application.Services;
-using Abp.Application.Services.Dto;
+﻿using System;
+using System.Linq;
+using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using OceanStar.Argus.Entities.Cameras;
 using OceanStar.Argus.Registries.Dto;
 using System.Threading.Tasks;
+using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
+using Abp.Extensions;
+using Abp.Linq.Extensions;
+using Abp.UI;
 
 namespace OceanStar.Argus.Registries
 {
@@ -19,12 +25,37 @@ namespace OceanStar.Argus.Registries
             _cameraRepository = cameraRepository;
         }
 
-        public async Task<int> RegisterCamera(RegisterCameraDto input)
+        public async Task<CameraDto> GetCameraByIdAsync(int cameraId)
+        {
+            try
+            {
+                return await GetAsync(new EntityDto<int>(cameraId));
+            }
+            catch (EntityNotFoundException e)
+            {
+                throw new UserFriendlyException($"不存在 Id 为 {cameraId} 的监控设备！", e);
+            }
+        }
+
+        public async Task<PagedResultDto<CameraDto>> GetAllCameraAsync(PagedCameraResultRequestDto input)
+        {
+            return await GetAllAsync(input);
+        }
+
+        protected override IQueryable<Camera> CreateFilteredQuery(PagedCameraResultRequestDto input)
+        {
+            return _cameraRepository.GetAll()
+                .WhereIf(!input.Keyword.IsNullOrWhiteSpace(),
+                    c => c.Name.Contains(input.Keyword) ||
+                         c.Code.Contains(input.Keyword));
+        }
+
+        public async Task<int> RegisterCameraAsync(RegisterCameraDto input)
         {
             Camera existCamera = await _cameraRepository.FirstOrDefaultAsync(c => c.Code == input.Code);
             if (existCamera != null)
             {
-                return existCamera.Id;
+                throw new UserFriendlyException($"已经存在 Code 为 {input.Code} 的监控设备！");
             }
 
             Camera camera = ObjectMapper.Map<Camera>(input);
@@ -34,9 +65,24 @@ namespace OceanStar.Argus.Registries
             return cameraId;
         }
 
-        public Task UnregisterCamera(int cameraId)
+        public async Task<CameraDto> UpdateCameraAsync(CameraDto input)
         {
-            throw new System.NotImplementedException();
+            return await UpdateAsync(input);
         }
+
+        public async Task UnregisterCameraAsync(int cameraId)
+        {
+            try
+            {
+                Camera existCamera = await _cameraRepository.GetAsync(cameraId);
+            }
+            catch (EntityNotFoundException e)
+            {
+                throw new UserFriendlyException($"不存在 Id 为 {cameraId} 的监控设备！", e);
+            }
+
+            await _cameraRepository.DeleteAsync(cameraId);
+        }
+
     }
 }

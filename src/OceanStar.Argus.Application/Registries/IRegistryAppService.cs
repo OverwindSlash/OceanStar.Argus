@@ -7,7 +7,14 @@ namespace OceanStar.Argus.Registries
 {
     public interface IRegistryAppService : IApplicationService
     {
-        Task<int> RegisterCamera(RegisterCameraDto input);
-        Task UnregisterCamera(int cameraId);
+        Task<CameraDto> GetCameraByIdAsync(int cameraId);
+
+        Task<PagedResultDto<CameraDto>> GetAllCameraAsync(PagedCameraResultRequestDto input);
+
+        Task<int> RegisterCameraAsync(RegisterCameraDto input);
+
+        Task<CameraDto> UpdateCameraAsync(CameraDto input);
+
+        Task UnregisterCameraAsync(int cameraId);
     }
 }
